@@ -1,0 +1,36 @@
+.brand {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem 6rem;
+}
+.brand div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .brand {
+    padding: 2rem 4rem;
+  }
+
+  .brand div {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .brand {
+    padding: 2rem;
+  }
+
+  .brand div {
+    margin: 0.4rem;
+  }
+}

@@ -1,0 +1,117 @@
+.possibility {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 7rem;
+  width: 100%;
+}
+
+.possibility_image {
+  flex: 1.5;
+  display: flex;
+  min-width: 130px;
+}
+.possibility_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.possibility_content {
+  flex: 2;
+  width: 100%;
+}
+.possibility_content h4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  color: $possibility_color;
+  text-transform: capitalize;
+}
+.possibility_content h2 {
+  font-family: $font_family;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 39px;
+  text-transform: capitalize;
+  margin-bottom: 0.4rem;
+}
+.possibility_content p {
+  font-family: $font_family;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text_color;
+}
+.possibility_content h4:last-child {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  color: $possibility_color;
+  text-transform: capitalize;
+  color: $subtext_color;
+}
+
+@media screen and (max-width: 1050px) {
+  .possibility {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .possibility {
+    padding: 2rem 4rem;
+  }
+
+  .possibility_content h4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .possibility_content h2 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+  }
+  .possibility_content p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .possibility_content h4:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .possibility {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .possibility_content h4 {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+
+  .possibility_content h2 {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 27px;
+  }
+  .possibility_content p {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+
+  .possibility_content h4:last-child {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+}
